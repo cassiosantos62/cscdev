@@ -17,7 +17,7 @@ import HeaderLinks from "components/Header/HeaderLinks.js";
 import NavPills from "components/NavPills/NavPills.js";
 import Parallax from "components/Parallax/Parallax.js";
 
-import profile from "assets/img/faces/christian.jpg";
+import profile from "assets/img/faces/cassio.jpg";
 
 import studio1 from "assets/img/examples/studio-1.jpg";
 import studio2 from "assets/img/examples/studio-2.jpg";
@@ -47,7 +47,7 @@ export default function ProfilePage(props) {
     <div>
       <Header
         color="transparent"
-        brand="NextJS Material Kit"
+        brand="Cássio Santos DEV"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
@@ -57,7 +57,9 @@ export default function ProfilePage(props) {
         {...rest}
       />
       <Parallax small filter image={require("assets/img/profile-bg.jpg")} />
-      <div className={classNames(classes.main, classes.mainRaised)}>
+      <div className={classNames(classes.main, classes.mainRaised)}
+        style={{paddingBottom: '50px'}}
+      >
         <div>
           <div className={classes.container}>
             <GridContainer justify="center">
@@ -67,16 +69,33 @@ export default function ProfilePage(props) {
                     <img src={profile} alt="..." className={imageClasses} />
                   </div>
                   <div className={classes.name}>
-                    <h3 className={classes.title}>Christian Louboutin</h3>
-                    <h6>DESIGNER</h6>
-                    <Button justIcon link className={classes.margin5}>
+                    <h3 className={classes.title}>Cássio Santos</h3>
+                    <h6>Programador FRONT-END</h6>
+                    <Button justIcon link className={classes.margin5}
+                      href="https://twitter.com/Cassiosantos62"
+                      target="_blank"
+                    >
                       <i className={"fab fa-twitter"} />
                     </Button>
-                    <Button justIcon link className={classes.margin5}>
+
+                    <Button justIcon link className={classes.margin5}
+                      href="https://www.instagram.com/cassiosantos62"
+                      target="_blank"
+                    >
                       <i className={"fab fa-instagram"} />
                     </Button>
-                    <Button justIcon link className={classes.margin5}>
+                    <Button justIcon link className={classes.margin5}
+                      href="https://www.facebook.com/cassiosantos62"
+                      target="_blank"
+                    >
                       <i className={"fab fa-facebook"} />
+                    </Button>
+
+                    <Button justIcon link className={classes.margin5}
+                      href="https://www.linkedin.com/in/c%C3%A1ssio-santos-471787b5/"
+                      target="_blank"
+                    >
+                      <i className={"fab fa-linkedin"} />
                     </Button>
                   </div>
                 </div>
@@ -84,13 +103,17 @@ export default function ProfilePage(props) {
             </GridContainer>
             <div className={classes.description}>
               <p>
-                An artist of considerable range, Chet Faker — the name taken by
-                Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
-                and records all of his own music, giving it a warm, intimate
-                feel with a solid groove structure.{" "}
+                Amante da tecnologia desde o primeiro contato no ano de 2005, busco sempre esta 
+                antenado nas novidades do mundo Web. Hoje atuo na área de programação Web com o foco 
+                no FRONT END, contribuo com o meu melhor na ACportal Soluções Web onde atuo desde 2017, tambem participo 
+                de alguns projetos como freelancer. Estudante de Análise e Desenvolvimento de Sistemas busco capacitação 
+                para melhor desenvolver meu trabalho. <br></br>
+                
+                Dê uma navegada no site para conhecer um pouco melhor do meu trabalho.{" "}
               </p>
             </div>
-            <GridContainer justify="center">
+            
+            {/* <GridContainer justify="center">
               <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
                 <NavPills
                   alignCenter
@@ -205,7 +228,7 @@ export default function ProfilePage(props) {
                   ]}
                 />
               </GridItem>
-            </GridContainer>
+            </GridContainer> */}
           </div>
         </div>
       </div>

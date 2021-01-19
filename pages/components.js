@@ -38,7 +38,7 @@ export default function Components(props) {
   return (
     <div>
       <Header
-        brand="NextJS Material Kit"
+        brand="Cássio Santos DEV"
         rightLinks={<HeaderLinks />}
         fixed
         color="transparent"
@@ -48,14 +48,14 @@ export default function Components(props) {
         }}
         {...rest}
       />
-      <Parallax image={require("assets/img/nextjs_header.jpg")}>
+      <Parallax image={require("assets/img/gif-technology4.gif")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
-                <h1 className={classes.title}>NextJS Material Kit SNAKE SNIPER.</h1>
+                <h1 className={classes.title}>Front End Developer</h1>
                 <h3 className={classes.subtitle}>
-                  A Badass Material Kit based on Material-UI and NextJS.
+                  Conheça aqui um pouco do meu trabalho...
                 </h3>
               </div>
             </GridItem>

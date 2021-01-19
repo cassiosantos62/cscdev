@@ -27,6 +27,26 @@ export default function HeaderLinks(props) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
+        <Button
+          href="/profile"
+          color="transparent"
+          className={classes.navLink}
+        >
+          <Icon className={classes.icons}>person</Icon> Perfil
+        </Button>
+      </ListItem>
+
+      <ListItem className={classes.listItem}>
+        <Button
+          href="/portifolio"
+          color="transparent"
+          className={classes.navLink}
+        >
+          <Icon className={classes.icons}>web</Icon> Portifólio
+        </Button>
+      </ListItem>
+
+      <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
           navDropdown
