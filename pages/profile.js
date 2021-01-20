@@ -7,6 +7,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import Camera from "@material-ui/icons/Camera";
 import Palette from "@material-ui/icons/Palette";
 import Favorite from "@material-ui/icons/Favorite";
+import ReceiptIcon from '@material-ui/icons/Receipt';
+import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
+import PlaylistAddIcon from '@material-ui/icons/PlaylistAdd';
 // core components
 import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";
@@ -113,114 +116,80 @@ export default function ProfilePage(props) {
               </p>
             </div>
             
-            {/* <GridContainer justify="center">
+            <GridContainer justify="center">
               <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
                 <NavPills
                   alignCenter
                   color="primary"
                   tabs={[
                     {
-                      tabButton: "Studio",
-                      tabIcon: Camera,
+                      tabButton: "Experiência",
+                      tabIcon: ReceiptIcon,
                       tabContent: (
                         <GridContainer justify="center">
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={studio1}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={studio2}
-                              className={navImageClasses}
-                            />
+                          <GridItem xs={12} sm={12} >
+                            <div>
+                              <p>
+                                <b>Programador</b> <br/>
+                                Nome da empresa: AC Portal Soluções Web Ltda<br/>
+                                Período do emprego: Jun. de 2017 – o momento<br/>
+                                Localidade: Belo Horizonte Area, Brazil<br/>
+                              </p>  
+                            </div>  
                           </GridItem>
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={studio5}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={studio4}
-                              className={navImageClasses}
-                            />
+                          <GridItem xs={12} sm={12} >
+                            <div>
+                              <p>
+                                <b>Programador</b> <br/>
+                                Nome da empresa: Fastdezine, Inc.
+                                Duração total: 1 ano<br/>
+                                Período do emprego: Jan. de 2015<br/>
+                                Localidade: Belo Horizonte Area, Brazil<br/>
+                              </p>  
+                            </div>  
+                          </GridItem>
+                          
+                        </GridContainer>
+                      )
+                    },
+                    {
+                      tabButton: "Formação",
+                      tabIcon: AssignmentIndIcon,
+                      tabContent: (
+                        <GridContainer justify="center">
+                          <GridItem xs={12} sm={12}>
+                            <div>
+                              <p>
+                                <b>Análise e Desenvolvimento de Sitemas</b> <br/>
+                                Instituição: Anhanguera Educacional.
+                                Conclusão: 06/2021<br/>
+                                Localidade: Belo Horizonte, Brazil<br/>
+                              </p>
+
+                              
+                              
+  
+                            </div>
                           </GridItem>
                         </GridContainer>
                       )
                     },
                     {
-                      tabButton: "Work",
-                      tabIcon: Palette,
+                      tabButton: "Complementares",
+                      tabIcon: PlaylistAddIcon,
                       tabContent: (
                         <GridContainer justify="center">
                           <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={work1}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={work2}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={work3}
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={work4}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={work5}
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                        </GridContainer>
-                      )
-                    },
-                    {
-                      tabButton: "Favorite",
-                      tabIcon: Favorite,
-                      tabContent: (
-                        <GridContainer justify="center">
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={work4}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={studio3}
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={work2}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={work1}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={studio1}
-                              className={navImageClasses}
-                            />
+                            <p>
+                              <b>Atividades Complementares</b><br/>
+                              <p>Curso online de Ionic 3 Básico (2017) - School of Net.</p>
+                              <p>Curso online de JavaScript Básico (2017) - School of Net.</p>
+                              <p>Curso Online de PHP - TreinaWeb (2015).</p>
+                              <p>Participação no Workshop: Desenvolvimento de Themes p/ Wordpress - Quartel Design (2014).</p>
+                              <p>Participação no evento WordCamp-BH (2014).</p>
+                              <p>Curso Profissionalizante de Web Designer, APHDP  (2012).</p>
+                              <p>Curso Profissionalizante de Manutenção de computadores, APHDP (2012).</p>
+                            </p>
                           </GridItem>
                         </GridContainer>
                       )
@@ -228,7 +197,7 @@ export default function ProfilePage(props) {
                   ]}
                 />
               </GridItem>
-            </GridContainer> */}
+            </GridContainer>
           </div>
         </div>
       </div>
