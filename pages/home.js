@@ -15,18 +15,20 @@ import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
 import Parallax from "components/Parallax/Parallax.js";
 // sections for this page
-import SectionBasics from "pages-sections/Components-Sections/SectionBasics.js";
+/*import SectionBasics from "pages-sections/Components-Sections/SectionBasics.js";
 import SectionNavbars from "pages-sections/Components-Sections/SectionNavbars.js";
 import SectionTabs from "pages-sections/Components-Sections/SectionTabs.js";
 import SectionPills from "pages-sections/Components-Sections/SectionPills.js";
 import SectionNotifications from "pages-sections/Components-Sections/SectionNotifications.js";
 import SectionTypography from "pages-sections/Components-Sections/SectionTypography.js";
 import SectionJavascript from "pages-sections/Components-Sections/SectionJavascript.js";
-import SectionCarousel from "pages-sections/Components-Sections/SectionCarousel.js";
+import SectionCarousel from "pages-sections/Components-Sections/SectionCarousel.js";*/
 import SectionCompletedExamples from "pages-sections/Components-Sections/SectionCompletedExamples.js";
 import SectionLogin from "pages-sections/Components-Sections/SectionLogin.js";
-import SectionExamples from "pages-sections/Components-Sections/SectionExamples.js";
-import SectionDownload from "pages-sections/Components-Sections/SectionDownload.js";
+/*import SectionExamples from "pages-sections/Components-Sections/SectionExamples.js";
+import SectionDownload from "pages-sections/Components-Sections/SectionDownload.js";*/
+
+import ProductSection from "pages-sections/LandingPage-Sections/ProductSection.js";
 
 import styles from "assets/jss/nextjs-material-kit/pages/components.js";
 
@@ -38,6 +40,7 @@ export default function Components(props) {
   return (
     <div>
       <Header
+        //image={require("assets/img/gif-technology4.gif")}
         brand="Cássio Santos DEV"
         rightLinks={<HeaderLinks />}
         fixed
@@ -55,7 +58,7 @@ export default function Components(props) {
               <div className={classes.brand}>
                 <h1 className={classes.title}>Front End Developer</h1>
                 <h3 className={classes.subtitle}>
-                  Conheça aqui um pouco do meu trabalho...
+                  Conheça aqui um pouco sobre o desenvolvimento dos projetos...
                 </h3>
               </div>
             </GridItem>
@@ -64,16 +67,18 @@ export default function Components(props) {
       </Parallax>
 
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <SectionBasics />
+        <ProductSection />
+        {/*<SectionBasics />
         <SectionNavbars />
         <SectionTabs />
         <SectionPills />
         <SectionNotifications />
         <SectionTypography />
         <SectionJavascript />
-        <SectionCarousel />
+        <SectionCarousel />*/}
         <SectionCompletedExamples />
         <SectionLogin />
+        {/*
         <GridItem md={12} className={classes.textCenter}>
           <Link href="/login">
             <a className={classes.link}>
@@ -84,7 +89,7 @@ export default function Components(props) {
           </Link>
         </GridItem>
         <SectionExamples />
-        <SectionDownload />
+        <SectionDownload />*/}
       </div>
       <Footer />
     </div>

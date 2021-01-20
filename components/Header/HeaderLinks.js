@@ -28,6 +28,16 @@ export default function HeaderLinks(props) {
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
         <Button
+          href="/home"
+          color="transparent"
+          className={classes.navLink}
+        >
+          <Icon className={classes.icons}>house</Icon> Home
+        </Button>
+      </ListItem>
+
+      <ListItem className={classes.listItem}>
+        <Button
           href="/profile"
           color="transparent"
           className={classes.navLink}
@@ -45,7 +55,8 @@ export default function HeaderLinks(props) {
           <Icon className={classes.icons}>web</Icon> Portifólio
         </Button>
       </ListItem>
-
+      
+      {/*
       <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
@@ -95,7 +106,7 @@ export default function HeaderLinks(props) {
           <IconButton aria-label="Delete">
             <DeleteIcon />
           </IconButton>
-        </Tooltip>*/}
+        </Tooltip>
         <Tooltip
           id="instagram-twitter"
           title="Follow us on twitter"
@@ -145,7 +156,7 @@ export default function HeaderLinks(props) {
             <i className={classes.socialIcons + " fab fa-instagram"} />
           </Button>
         </Tooltip>
-      </ListItem>
+        </ListItem>*/}
     </List>
   );
 }

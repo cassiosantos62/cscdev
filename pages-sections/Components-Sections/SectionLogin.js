@@ -30,7 +30,7 @@ export default function SectionLogin() {
             <Card>
               <form className={classes.form}>
                 <CardHeader color="primary" className={classes.cardHeader}>
-                  <h4>Login</h4>
+                  <h4>Peça um Orçamento.</h4>
                   <div className={classes.socialLine}>
                     <Button
                       justIcon
@@ -65,11 +65,11 @@ export default function SectionLogin() {
                     </Button>
                   </div>
                 </CardHeader>
-                <p className={classes.divider}>Or Be Classical</p>
+                
                 <CardBody>
                   <CustomInput
-                    labelText="First Name..."
-                    id="first"
+                    labelText="Nome"
+                    id="Nome"
                     formControlProps={{
                       fullWidth: true
                     }}
@@ -98,17 +98,17 @@ export default function SectionLogin() {
                     }}
                   />
                   <CustomInput
-                    labelText="Password"
-                    id="pass"
+                    labelText="Telefone"
+                    id="telefone"
                     formControlProps={{
                       fullWidth: true
                     }}
                     inputProps={{
-                      type: "password",
+                      type: "phone",
                       endAdornment: (
                         <InputAdornment position="end">
                           <Icon className={classes.inputIconsColor}>
-                            lock_outline
+                            phone
                           </Icon>
                         </InputAdornment>
                       ),
@@ -118,7 +118,7 @@ export default function SectionLogin() {
                 </CardBody>
                 <CardFooter className={classes.cardFooter}>
                   <Button simple color="primary" size="lg">
-                    Get started
+                    Enviar
                   </Button>
                 </CardFooter>
               </form>
