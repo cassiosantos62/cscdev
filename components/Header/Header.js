@@ -12,6 +12,10 @@ import IconButton from "@material-ui/core/IconButton";
 import Button from "@material-ui/core/Button";
 import Hidden from "@material-ui/core/Hidden";
 import Drawer from "@material-ui/core/Drawer";
+
+import logo from '../../assets/img/logo-white2.png';
+import logoblack from '../../assets/img/logo-black.png'; // Tell webpack this JS file uses this image
+
 // @material-ui/icons
 import Menu from "@material-ui/icons/Menu";
 // core components
@@ -45,6 +49,11 @@ export default function Header(props) {
       document.body
         .getElementsByTagName("header")[0]
         .classList.add(classes[changeColorOnScroll.color]);
+
+        document.getElementById("logo").src = logoblack;
+        
+        //console.log('teste'+ {logoblack});
+
     } else {
       document.body
         .getElementsByTagName("header")[0]
@@ -52,6 +61,8 @@ export default function Header(props) {
       document.body
         .getElementsByTagName("header")[0]
         .classList.remove(classes[changeColorOnScroll.color]);
+
+      document.getElementById("logo").src = logo;
     }
   };
   const { color, rightLinks, leftLinks, brand, fixed, absolute } = props;
@@ -63,7 +74,7 @@ export default function Header(props) {
   });
   const brandComponent = (
     <Link href="/home" as="/home">
-      <Button className={classes.title}>{brand}</Button>
+      <Button className={classes.title}><img src={logo} alt="Logo" id="logo" /></Button>
     </Link>
   );
   return (
